@@ -77,7 +77,7 @@ function foo() {
 	'use strict';
 	
 	console.log("foo's this: ", this);   // undefined
-	
+}
 ```
 
 <br>
