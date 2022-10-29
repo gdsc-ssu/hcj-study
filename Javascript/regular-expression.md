@@ -150,8 +150,8 @@ form.addEventListener('submit', (event) => {
 })
 ```
 
-<img src='https://github.com/gdsc-ssu/hcj-study/blob/javascript/Regular-Expression-Regex/search-pattern.jpg' width='60%'>
-<img src='https://github.com/gdsc-ssu/hcj-study/blob/javascript/Regular-Expression-Regex/search-pattern.jpg' width='60%'>
+<img src='https://github.com/gdsc-ssu/hcj-study/blob/javascript/Regular-Expression-Regex/ex1.jpg' width='60%'>
+<img src='https://github.com/gdsc-ssu/hcj-study/blob/javascript/Regular-Expression-Regex/ex2.jpg' width='60%'>
 
 
 <p>참조</p>
