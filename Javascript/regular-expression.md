@@ -2,5 +2,5 @@
 <hr />
 
 ```
-console.log('이게 맞나')
+const pr = 123;
 ```
