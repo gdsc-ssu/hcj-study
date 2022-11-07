@@ -73,7 +73,7 @@ regexp2 = /lorem/i;  // --> TypeError
  
 <h3>정규표현식 플래그</h3>
 정규식 플래그는 정규식을 생성할 때 고급 검색을 위한 전역 옵션을 설정할 수 있도록 지원하는 기능이다.
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/104986866/200372416-18faa888-1165-46f2-b443-cc9ff7403dec.jpg" style="zoom:60%;" >
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/104986866/200372416-18faa888-1165-46f2-b443-cc9ff7403dec.jpg" >
 
 ```javascript
 // flags 에 플래그 문자열이 들어간다.
@@ -92,22 +92,22 @@ const regex2 = /apple/gm;
 +따옴표를 포함하면 따옴표까지도 패턴에 포함되어 검색된다.<br />
 +패턴은 특별한 의미를 가지는 메타문자 또는 기호로 표현 가능하다.<br />
 +어떤 문자열 내에 패턴과 일치하는 문자열이 존재할 때, ‘정규 표현식과 매치한다’고 표현한다.<br />
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/104986866/200372420-1364e9bd-cdac-4a80-9e4e-bbd4fe1b8d7a.jpg" style="zoom:60%;" >
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/104986866/200372420-1364e9bd-cdac-4a80-9e4e-bbd4fe1b8d7a.jpg" style="zoom:20%;" >
 
 <h3>정규표현식 검색 패턴</h3>
 아래 패턴들을 이용하면, AND, OR, StartWith, EndWith 등의 다양한 조합을 만들 수 있다.
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/104986866/200372426-be6936e8-874f-446f-a268-6eea3e30649e.jpg" style="zoom:60%;" >
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/104986866/200372426-be6936e8-874f-446f-a268-6eea3e30649e.jpg" style="zoom:60%;" >
 
 
 <h3>정규표현식 갯수(수량) 패턴</h3>
 특정 패턴이 몇번 반복되는지도 필터링 가능하다.
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/104986866/200372425-20778dc5-7f4f-4196-8dd3-dc5514a6ac00.jpg" style="zoom:60%;" >
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/104986866/200372425-20778dc5-7f4f-4196-8dd3-dc5514a6ac00.jpg" style="zoom:60%;" >
 
 <h3>정규표현식 주요 메서드</h3>
 정규표현식을 가지고 이메일이나 전화번호 매칭 필터링을 하기위해선 자바스크립트 정규식 메서드를 이용하여 패턴을 검사하고, 매칭되는 문자열을 추출, 변환한다.
 
 주의! exec 메서드는 문자열 내의 모든 패턴을 검색하는 g 플래그를 지정해도 첫 번째 매칭 결과만 반환해준다.
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/104986866/200372424-f4249940-5fd2-4e6e-a319-2876ec78febb.jpg" style="zoom:60%;" >
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/104986866/200372424-f4249940-5fd2-4e6e-a319-2876ec78febb.jpg" style="zoom:60%;" >
 
 ```javascript
 // 정규표현식을 담은 변수
@@ -150,8 +150,8 @@ form.addEventListener('submit', (event) => {
 })
 ```
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/104986866/200372408-66f920cb-4654-47fb-8ffb-c05f827ef149.jpg" style="zoom:60%;" >
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/104986866/200372415-b2f7b5ba-58e4-4671-9770-2ef103329568.jpg" style="zoom:60%;" >
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/104986866/200372408-66f920cb-4654-47fb-8ffb-c05f827ef149.jpg" style="zoom:60%;" >
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/104986866/200372415-b2f7b5ba-58e4-4671-9770-2ef103329568.jpg" style="zoom:60%;" >
 
 
 <p>참조</p>
