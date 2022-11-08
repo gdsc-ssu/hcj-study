@@ -27,7 +27,7 @@ div 태그를 사용해도 물론 가능은 하지만 우리는 여러 이점이
         ![https://user-images.githubusercontent.com/66131167/200261649-745fbe1e-4118-4790-8716-3b375371b098.png](https://user-images.githubusercontent.com/66131167/200261649-745fbe1e-4118-4790-8716-3b375371b098.png)
         
 - nav
-    - 다른 테이지나 같은 페이지 안에 다른 부분으로 이어주는 네비게이션 링크로 구성된 섹센
+    - 다른 테이지나 같은 페이지 안에 다른 부분으로 이어주는 네비게이션 링크로 구성된 섹션
     - 주로 네비게이션 블럭을 구성하는 섹션
         
         ![https://user-images.githubusercontent.com/66131167/200261719-380cc806-20e8-47d6-9171-5a17b8e32a5a.png](https://user-images.githubusercontent.com/66131167/200261719-380cc806-20e8-47d6-9171-5a17b8e32a5a.png)
@@ -98,8 +98,8 @@ div 태그를 사용해도 물론 가능은 하지만 우리는 여러 이점이
     ```
     
 
-> 출처
-> 
+## 참고자료
+ 
 - [https://opentutorials.org/module/1892/10954](https://opentutorials.org/module/1892/10954)
 - [https://server-talk.tistory.com/106](https://server-talk.tistory.com/106)
 - [https://www.youtube.com/watch?v=uDmNhHYecL4&t=146s](https://www.youtube.com/watch?v=uDmNhHYecL4&t=146s)
