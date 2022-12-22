@@ -139,3 +139,8 @@
     - 논리 연산자 중 하나인 and 구문을 사용할 때 구문 뒤에는 항상 공백을 한 칸 띄어줘야함.
 2. min/max 작성 순서
     - min을 사용할 때는 반드시 크기가 작은 순서대로, max를 사용할 때는 반드시 크기가 큰 순서대로 작성해야함.
+
+## 출처
+- https://masssal.tistory.com/31
+- https://developer.mozilla.org/ko/docs/Web/CSS/Media_Queries/Using_media_queries
+- https://velog.io/@yunsungyang-omc/CSS-%EB%B0%98%EC%9D%91%ED%98%95-%EC%9B%B9-%EB%AF%B8%EB%94%94%EC%96%B4-%EC%BF%BC%EB%A6%ACmedia-query
