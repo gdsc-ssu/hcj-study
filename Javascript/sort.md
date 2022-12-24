@@ -120,7 +120,7 @@ items.sort((a, b) => {
 
 ### v8
 
-v8에서의 `sort()` 메소드에 대한 구현 코드는 [v8 github](https://github.com/v8/v8/blob/main/third_party/v8/builtins/array-sort.tq)에서 볼 수 있으며, **[Tim Sort](https://d2.naver.com/helloworld/0315536)**를 사용하는 것을 확인할 수 있다. (Tim Sort 알고리즘은 Java와 Python에서도 사용된다고 한다)
+v8에서의 `sort()` 메소드에 대한 구현 코드는 [v8 github](https://github.com/v8/v8/blob/main/third_party/v8/builtins/array-sort.tq)에서 볼 수 있으며, [Tim Sort](https://d2.naver.com/helloworld/0315536)를 사용하는 것을 확인할 수 있다. (Tim Sort 알고리즘은 Java와 Python에서도 사용된다고 한다)
 
 <br>
 
