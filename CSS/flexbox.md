@@ -1,70 +1,83 @@
 # Flexbox
 
-- Container 에 여러개의 item 배치를 개발자가 쉽게 컨트롤할수 있도록 도와주는 것
-- 각 아이템의 height 를 동일하게 하거나 각 아이템의 간격을 동일하게 하는 작업을 좀 더 편하게 수행할 수 있음
-- 반응형 웹 디자인을 가능하게 해줌!
+- Container에 여러 개의 item 배치를 개발자가 쉽게 컨트롤할 수 있도록 도와주는 것
+- 각 아이템의 height 를 동일하게 하거나 각 아이템의 간격을 동일하게 하는 작업을 좀 더 편하게 수행할 수 있다.
+- 반응형 웹 디자인을 가능하게 해준다.
 
-## Flexbox 구성 요소
+<br>
 
-<aside>
-💡 flex container와 flex item에는 서로 적용할 수 있는 CSS 속성이 다름!
+## flexbox 구성 요소
 
-</aside>
+> 💡 flex container와 flex item에는 서로 적용할 수 있는 CSS 속성이 다르다.
 
-- 하나의 Flex Container
-    - flex-direction
-    - justify-content
-    - align-items 등
+- **flex container**
+  - `flex-direction`
+  - `justify-content`
+  - `align-items`
+  - ...
+- **flex item**
+  - `flex-basis`
+  - `flex-grow`
+  - `flex-shrink`
+  - ...
 
-</br>
-
-- 여러개의 Flex Item
-    - flex
-    - align-self
-    - order 등
+<br>
 
 ## Main/Cross Axis
 
-- flexbox를 원하는대로 제어하려면, axis의 개념에 대해서 정확히 이해해야 함
-- main/cross axis에 따라 CSS 속성이 좌우 또는 상하로 적용될 수 있기 때문!
-    - main axis는 여러 개의 flex item이 **순서대로 배치되는 방향**
-    - cross axis는 **main axis와 수직을 이루는 방향**
+> main axis: 주축, cross axis: 교차축
 
-### main axis
+flexbox를 원하는대로 제어하려면, axis의 개념에 대해서 이해해야 한다.
 
-- flex container의 flex-direction 속성에 의해서 결정되며, 기본값은 row 임
+- **main axis**:  [`flex-direction`](https://developer.mozilla.org/ko/docs/Web/CSS/flex-direction) 속성을 사용하여 지정
+- **cross axis**: main axis와 **수직**인 축으로 결정
 
-<aside>
+<br>
 
->💡 따라서, flex-container 내의 flex item은 **왼쪽부터 오른쪽 방향** 으로 배치됨!
+### Main Axis
 
-</aside>
+: `flex-direction`에 의해 결정되며, 4개의 값을 가질 수 있다.
 
-- 만약 flex-direction 속성을 ‘**column으로 설정’** 한다면, main axis는 위에서 아래로 내려오는 방향이 됨!
+- `row`
+- `row-reverse`
+- `column`
+- `column-reverse`
 
-### justify-content
+<br>
 
-- flex item을 main axis를 기준으로 어떻게 정렬할지를 결정하는 속성
+### Cross Axis
 
-</br>
+: Main Axis에 수직한다.
 
-- 기본 값은 `flex-start`
-    - flex item을 main axis의 맨 앞으로 정렬해줌
-    - 즉, `flex-direction` 속성이 `row`라면 좌측 정렬
-    - `flex-direction`속성이 `column`이라면 상단 정렬
+- **Main Axis**(`flex-direction`): `row` or `row-reverse` 
+  → **Cross Axis**: column direction
+- **Main Axis**(`flex-direction`): `column` or `column-reverse`
+  → **Cross Axis**: row direction
 
-</br>
+<br>
 
-- 속성 값
-    - flex-end
-    - center
-    - space-between
-    - space-evenly
-    - space-around
+## justify-content
 
-</br>
+: flex item을 **main axis를 기준**으로 정렬하는 방식을 결정하는 속성
 
-- 속성 예제
+<br>
+
+- 기본값은 `flex-start`
+
+- 속성값
+  - `stretch`
+  - `flex-start`
+  - `flex-end`
+  - `center`
+  - `space-around`
+  - `space-between`
+  - ...
+
+- [모든 속성값](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content#values)
+
+<br>
+
+### Example
 
 ```html
 <div class="container">
@@ -128,35 +141,31 @@ body {
   background: blue;
 }
 ```
+
 <img width="40%" height="40%" src="https://user-images.githubusercontent.com/109334968/200325424-532cccdb-331c-4ece-9884-f9a0a0c3c7e8.png">
 
+<br>
 
-### align-items
+## align-items
 
-- 속성은 flex item을 cross axis를 기준으로 어떻게 정렬할지를 결정
-  
-</br>
+: flex item을 **cross axis를 기준**으로 정렬하는 방식을 결정하는 속성
 
-- 기본값은 `stretch`
-    - flex item을 flex container의 높이 또는 너비만큼 늘려줌
-    - `flex-direction`속성이 `row`라면 높이 만큼 늘어남
-    - `flex-direction` 속성이 `column`이라면 너비만큼 늘어남
-    
-    <aside>
-    </br>
+<br>
 
-    >⚠️ `flex-direction`속성이 `row`일 때는 상하로 공백이 생기도록 `height` 속성을 지정해주지 않으면 아무 효과가 나타나지 않을 수 있음!
-    
-    </aside>
+- 기본값은 `stretch`
 
-- 속성 값
-    - center
-    - flex-start
-    - flex-end
-    - baseline 등
+- 속성값
+  - `stretch`
+  - `flex-start`
+  - `flex-end`
+  - `center`
+  - ...
 
-</br>
-- 속성 예제
+- [모든 속성값](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items#values)
+
+<br>
+
+### Example
 
 ```html
 <div class="container">
@@ -216,80 +225,46 @@ body {
   background: blue;
 }
 ```
+
 <img width="40%" height="40%" src="https://user-images.githubusercontent.com/109334968/200326204-ea54145b-2268-49f0-b927-3ef3cd991b33.png">
 
+<br>
 
+## flex item
 
+flex item에 지정가능한 속성들
 
-### flex
+- [`flex-basis`](https://developer.mozilla.org/ko/docs/Web/CSS/flex-basis)
+- [`flex-grow`](https://developer.mozilla.org/ko/docs/Web/CSS/flex-grow)
+- [`flex-shrink`](https://developer.mozilla.org/ko/docs/Web/CSS/flex-shrink)
 
-- main axis 기준으로 ‘**공간 배분을 위해서’** 사용됨
-</br>
+<br>
 
-- flex 속성은 `flex-grow`와 `flex-shrink`, `flex-basis`속성을 한 번에 적용할 수 있도록 해줌
-    - **flex-grow**
-        - 속성은 해당 flex item이 main axis 상에 공백이 있을 때, 이 공백을 얼마나 점유할지를 지정
-    - **flex-shrink**
-        - 해당 flex item이 main axis 상에 공간이 부족할 때, 얼마나 공간을 양보할지를 지정
-    - **flex-basis**
-        - 해당 flex item이 main axis 상에 공백이 있을 때, 최소 얼만큼의 공간을 점유할지를 지정
+### flex-basis
 
-</br>
+: 항목의 크기를 결정
 
-- 속성 예제
+- 기본값: `auto`
+- 크기가 지정되어 있으면, 그대로 사용
+- 크기가 지정되어 있지 않으면, **flex item**의 크기가 flex-basis 값으로 사용
 
-```html
-<div class="container">
-  <div class="item orange" style="flex: 1;">A</div>
-  <div class="item green">B</div>
-  <div class="item blue">C</div>
-</div>
-<div class="container">
-  <div class="item orange" style="flex: 1;">A</div>
-  <div class="item green" style="flex: 1;">B</div>
-  <div class="item blue" style="flex: 1;">C</div>
-</div>
-<div class="container">
-  <div class="item orange" style="flex: 1;">A</div>
-  <div class="item green" style="flex: 2;">B</div>
-  <div class="item blue" style="flex: 3;">C</div>
-</div>
-```
+<br>
 
-```css
-* {
-  box-sizing: border-box;
-}
+### flex-grow
 
-body {
-  margin: 0;
-}
+: 주축에서 남는 공간을 항목들에게 분배하는 방법을 결정
 
-.container {
-  display: flex;
-  flex-direction: row;
-  border: 5px solid red;
-}
+- 모든 항목의 `flex-grow` 값을 1로 지정하면 사용가능한 공간은 각 항목에게 동일하게 분배된다.
+- 첫 항목의 `flex-grow` 값을 2로 지정하고 나머지 두 개의 항목을 1로 지정한다면 각 항목에 지정된 `flex-grow` 값의 비율에 따라 남은 공간이 분배된다.
 
-.item {
-  color: white;
-  font-size: 48px;
-  padding: .5em;
-  text-align: center;
-}
+<br>
 
-.orange {
-  background: orange;
-}
+### flex-shrink
 
-.green {
-  background: green;
-}
+: `flex-shrink` 속성은 주축의 공간이 부족할때 각 항목의 사이즈를 줄이는 방법을 결정
 
-.blue {
-  background: blue;
-}
-```
-<img width="40%" height="40%" src="https://user-images.githubusercontent.com/109334968/200326474-e55502e2-aba1-4aa3-a6d1-d73985bf69ac.png">
+<br>
 
+## 참고 자료
 
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
